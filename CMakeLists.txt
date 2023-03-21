@@ -48,14 +48,12 @@ add_executable(cubic Application.cpp
         ogl_headers.h CubicApp.cpp CubicApp.h Cubic.cpp Cubic.h CubicWorker.cpp
         CubicWorker.h Face.cpp Face.h  main.cpp)
 
-add_executable(Lab8 Application.cpp
+add_executable(CubeSolver Application.cpp
         ogl_headers.h CubicApp.cpp CubicApp.h Cubic.cpp Cubic.h CubicWorker.cpp
         CubicWorker.h Face.cpp Face.h Menu.cpp Lab8.cpp)
 target_link_libraries(cubic ${EXTRA_LIBS})
-target_link_libraries(Lab8 ${EXTRA_LIBS})
+target_link_libraries(CubeSolver ${EXTRA_LIBS})
 if (MINGW)
     target_link_libraries(cubic winmm)
     add_dependencies(cubic copy_glut)
 endif()
-
-

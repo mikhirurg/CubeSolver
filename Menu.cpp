@@ -215,7 +215,7 @@ void Menu::Start() {
       case 4: {
         std::cout << "Let me try to solve this Rubik's Cube :)" << std::endl;
         if (worker_.CompileCubic()) {
-          std::cout << "Hurray! We solve this cube!!!" << std::endl;
+          std::cout << "Hurray! We solved this cube!!!" << std::endl;
           std::cout << "Number of moves: " << worker_.GetCube().log.size() << std::endl;
           std::cout << "Win combination: [";
           for (const auto& c : worker_.GetCube().log) {
